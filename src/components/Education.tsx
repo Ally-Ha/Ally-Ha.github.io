@@ -26,7 +26,7 @@ export function Education() {
 
         {/* Education Items */}
         <div className="space-y-16 lg:space-y-24">
-          {/* MIT */}
+          {/* SU */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24">
             <motion.div {...fadeInUp}>
               <img
@@ -35,7 +35,7 @@ export function Education() {
                 className="w-full h-auto grayscale"
               />
               <p className="mt-4 text-xs text-gray-500 tracking-widest uppercase">
-                MIT - CAMBRIDGE / USA
+                SU - Stockholm / Sverige
               </p>
             </motion.div>
 
@@ -46,19 +46,20 @@ export function Education() {
             >
               <div>
                 <h3 className="text-xl lg:text-2xl font-light text-white mb-4">
-                  Computer Science & Visual Arts
+                  M.Sc. AI for Health
                 </h3>
                 <p className="text-gray-400 leading-relaxed mb-4 text-sm lg:text-base">
-                  Started with algorithms, ended with apertures. Bruce's time at MIT 
-                  gave him a unique perspective on the intersection of technology 
-                  and visual storytelling that continues to influence his work today.
+                  Coursework of artificial intelligence (AI) and its applications in healthcare,
+                  including machine learning, nlp, reinforcement learning and data science.
+                  Master Thesis on: "Constitutional AI using Acceptance and Commitment Principles",
+                  supervised by Zack Hui (Cambridge University) and Prof. Isak Samsten (Stockholm University).
                 </p>
                 <p className="text-sm text-gray-500">2008 — 2012</p>
               </div>
             </motion.div>
           </div>
 
-          {/* Parsons */}
+          {/* Psychology */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24">
             <motion.div
               {...fadeInUp}
@@ -66,12 +67,13 @@ export function Education() {
             >
               <div>
                 <h3 className="text-xl lg:text-2xl font-light text-white mb-4">
-                  Photography & Visual Storytelling
+                  M.Sc. Psychology
                 </h3>
                 <p className="text-gray-400 leading-relaxed mb-4 text-sm lg:text-base">
-                  The decision to pursue photography full-time led Bruce to Parsons, 
-                  where he developed his signature style of documentary portraiture 
-                  and learned the fundamentals of visual narrative.
+                  Coursework in Methods of Psychological Research, Advanced Statistics,
+                  EEG and fMRI Analysis, Cognitive Psychology, and Clinical Psychology.
+                  Master Thesis on: "Sentiment Analysis in Research Abstracts: ChatGPT generated vs. Human-written"
+                  Supervised by Prof. Dr. Guilherme Wood, University of Graz, Austria.
                 </p>
                 <p className="text-sm text-gray-500">2013 — 2015</p>
               </div>
@@ -88,7 +90,7 @@ export function Education() {
                 className="w-full h-auto grayscale"
               />
               <p className="mt-4 text-xs text-gray-500 tracking-widest uppercase">
-                PARSONS SCHOOL OF DESIGN - NEW YORK / USA
+                University of Graz - Graz / AUSTRIA
               </p>
             </motion.div>
           </div>
@@ -102,7 +104,7 @@ export function Education() {
                 className="w-full h-auto grayscale"
               />
               <p className="mt-4 text-xs text-gray-500 tracking-widest uppercase">
-                ICP - NEW YORK / USA
+                University of Graz - Graz / AUSTRIA
               </p>
             </motion.div>
 
@@ -113,12 +115,11 @@ export function Education() {
             >
               <div>
                 <h3 className="text-xl lg:text-2xl font-light text-white mb-4">
-                  Documentary Photography Certificate
+                  B.Sc. Psychology
                 </h3>
                 <p className="text-gray-400 leading-relaxed mb-4 text-sm lg:text-base">
-                  An intensive program at ICP refined Bruce's approach to long-form 
-                  documentary projects and deepened his understanding of photographic 
-                  ethics and storytelling responsibility.
+                  Coursework in Social, Biological, General Psychology, Statistics, and Research Methods.
+                  Bachelor Thesis on: "Cognitive Load"
                 </p>
                 <p className="text-sm text-gray-500">2016</p>
               </div>

@@ -2,34 +2,22 @@ import { motion } from 'framer-motion'
 
 const talks = [
   {
-    title: 'The Power of Visual Narrative',
-    event: 'Creative Conference Berlin',
+    title: 'The ps[ai]chology project',
+    project: 'A science communication blog briding the gap between psychology and artificial intelligence',
+    year: 'starting soon',
+    link: 'the-psaichology-project.com',
+  },
+  {
+    title: 'Athletes Development Journal',
+    project: 'Co-Building a scientific sportpsychological journal for athletes',
+    year: '2026',
+    link: 'www.athletesdevelopment.cc',
+  },
+  {
+    title: 'Gravel Grinders Graz',
+    event: 'Co-Founded the first gravel cycling community in Graz, Austria (100+ members)',
     year: '2023',
-    link: '#',
-  },
-  {
-    title: 'Documentary Photography in the Age of AI',
-    event: 'TED Talk',
-    year: '2023',
-    link: '#',
-  },
-  {
-    title: 'Finding Your Voice Through the Lens',
-    event: 'PhotoLondon Festival',
-    year: '2022',
-    link: '#',
-  },
-  {
-    title: 'The Responsibility of the Witness',
-    event: 'World Press Photo Awards',
-    year: '2021',
-    link: '#',
-  },
-  {
-    title: 'Light, Shadow, and Human Connection',
-    event: 'Aperture Foundation',
-    year: '2020',
-    link: '#',
+    link: 'www.gravelgrindersgraz.at',
   },
 ]
 
@@ -54,7 +42,7 @@ export function Speaking() {
           {...fadeInUp}
           className="font-display text-[10vw] lg:text-section leading-none tracking-tight mb-16 lg:mb-24"
         >
-          SPEAKING
+          PROJECTS
         </motion.h2>
 
         {/* Talks List */}

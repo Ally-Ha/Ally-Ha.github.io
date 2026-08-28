@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 
 const contacts = [
-  { label: 'UNITED STATES', type: 'location', link: '#' },
-  { label: 'UNITED KINGDOM', type: 'location', link: '#' },
+  { label: 'GERMANY', type: 'location', link: '#' },
+  { label: 'NEW ZEALAND', type: 'location', link: '#' },
 ]
 
 const fadeInUp = {
@@ -47,10 +47,6 @@ export function Contact() {
             I'M NOTORIOUSLY<br />
             SLOW AT GETTING<br />
             BACK TO EMAILS
-          </h3>
-          <p className="text-sm text-gray-500 tracking-widest uppercase">
-            IN A HURRY? PLEASE CONTACT MY AWESOME PRODUCERS
-          </p>
         </motion.div>
 
         {/* Contact Links */}
@@ -86,26 +82,18 @@ export function Contact() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 md:gap-16">
             <a
-              href="mailto:bruce@banner.photography"
+              href="mailto:alina@hantkes.de"
               className="text-lg lg:text-xl text-gray-300 hover:text-white transition-colors underline underline-offset-4"
             >
-              bruce@banner.photography
+              alina@hantkes.de
             </a>
             <a
-              href="https://instagram.com/brucebanner"
+              href="https://instagram.com/ally_htk"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg lg:text-xl text-gray-300 hover:text-white transition-colors underline underline-offset-4"
             >
               Instagram
-            </a>
-            <a
-              href="https://vimeo.com/brucebanner"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg lg:text-xl text-gray-300 hover:text-white transition-colors underline underline-offset-4"
-            >
-              Vimeo
             </a>
           </div>
         </motion.div>
@@ -116,10 +104,10 @@ export function Contact() {
           className="mt-24 lg:mt-32 pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-4"
         >
           <p className="text-xs text-gray-600">
-            © {new Date().getFullYear()} Bruce Banner Photography. All rights reserved.
+            © {new Date().getFullYear()} Alina Hantke. All rights reserved.
           </p>
           <p className="text-xs text-gray-600">
-            New York / London
+            München / Stockholm /Auckland
           </p>
         </motion.footer>
       </div>

@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion'
 
 const skills = [
-  'Editorial Photography',
-  'Portrait Photography',
-  'Documentary',
-  'Commercial Campaigns',
-  'Art Direction',
-  'Visual Storytelling',
-  'Photo Editing',
-  'Creative Direction',
+  'Statistical Analysis',
+  'Methodoloical Design',
+  'Machine Learning',
+  'Data Science',
+  'Science Communication',
+  'Experimental Psychology',
+  'Sport Psychology',
+  'Ethical Considerations in AI for Mental Health',
 ]
 
 const fadeInUp = {

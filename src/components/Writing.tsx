@@ -2,27 +2,27 @@ import { motion } from 'framer-motion'
 
 const articles = [
   {
-    title: 'Visual Storytelling in the Digital Age',
-    publication: 'Aperture Magazine',
-    year: '2023',
+    title: 'Impact of an App-Based Resilience Training on Enhancing Stress Regulation and Mental Health',
+    publication: 'Neuropsychobiology',
+    year: '2025',
+    link: 'https://pubmed.ncbi.nlm.nih.gov/39938508/',
+  },
+  {
+    title: 'Ultracyclistin Alina Hantke über das Three Peaks Bike Race',
+    publication: 'The Female Explorer',
+    year: '2024',
+    link: '#https://thefemaleexplorer.de/outdoor-frauen/ultracycling-three-peaks-bike-race-erfahrung-frau-alina-hantke/',
+  },
+  {
+    title: 'Master Thesis of AI For Health: Constitutional AI using Acceptance and Commitment Principles',
+    publication: 'In Preparation for Publication',
+    year: '2026',
     link: '#',
   },
   {
-    title: 'The Ethics of Documentary Photography',
-    publication: 'Photography Journal',
-    year: '2022',
-    link: '#',
-  },
-  {
-    title: 'Finding Light in Darkness: A Personal Journey',
-    publication: 'The New York Times',
-    year: '2021',
-    link: '#',
-  },
-  {
-    title: 'Why Black & White Still Matters',
-    publication: 'British Journal of Photography',
-    year: '2020',
+    title: 'Master Thesis of Psychology: Sentiment Analysis of Research Abstracts.',
+    publication: 'In Preparation for Publication',
+    year: '2025',
     link: '#',
   },
 ]

@@ -13,7 +13,7 @@ export function About() {
       <div className="max-w-7xl mx-auto">
         {/* Section Label */}
         <motion.div {...fadeInUp} className="mb-16">
-          <span className="text-sm text-gray-500 tracking-widest uppercase">About Bruce</span>
+          <span className="text-sm text-gray-500 tracking-widest uppercase">About Alina</span>
           <div className="w-6 h-px bg-gray-600 mt-2" />
         </motion.div>
 
@@ -39,10 +39,9 @@ export function About() {
             className="order-1 lg:order-2 flex items-center"
           >
             <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
-              It may not be obvious, but Bruce studied computer science at MIT, 
-              with a minor in visual arts. Preferring lenses to algorithms, 
-              he quickly abandoned a promising tech career to study Photography 
-              and Visual Storytelling at Parsons School of Design in New York.
+              Hej there! I studies Psychology (B.Sc. and M.Sc.) at the University of Graz in Austria.
+              With the AI Hype I started to get interested in AI, so I decided to learn more about it and
+              started a second 2-year Master in Artificial Intelligence for Health at the Stockholm University in Sweden.
             </p>
           </motion.div>
         </div>
@@ -71,10 +70,9 @@ export function About() {
             className="flex items-center lg:text-right"
           >
             <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
-              Bruce spent a little over a year in New York before moving to 
-              London as a Junior Photographer for Magnum Photos. He met some 
-              incredible people at the legendary agency, and they're still 
-              friends to this day.
+              Now, I am currently on a mission to build a bridge between
+              Psychology, Sport and AI, and communicating scientific knowledge to the public.
+              I am also interested in the ethical implications of AI and how it can be used to improve mental health and well-being.
             </p>
           </motion.div>
 
@@ -92,37 +90,5 @@ export function About() {
             </p>
           </motion.div>
         </div>
-
-        {/* Third Block */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24">
-          <motion.div {...fadeInUp}>
-            <img
-              src="https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="Bruce shooting for National Geographic"
-              className="w-full h-auto grayscale"
-            />
-            <p className="mt-4 text-xs text-gray-500 tracking-widest uppercase">
-              SHOOTING FOR NATIONAL GEOGRAPHIC - PATAGONIA / AR<br />
-              (2019)
-            </p>
-          </motion.div>
-
-          <motion.div
-            {...fadeInUp}
-            transition={{ ...fadeInUp.transition, delay: 0.2 }}
-            className="flex items-center"
-          >
-            <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
-              From London, Bruce moved to Berlin with VII Photo Agency. Where he 
-              worked under a great Art Director, Hans Mueller. From there he 
-              went on to build a truly global career, first as Staff Photographer 
-              then as Creative Director for the likes of National Geographic, 
-              Time Magazine, and The New York Times, before finally going 
-              independent in 2020.
-            </p>
-          </motion.div>
-        </div>
-      </div>
-    </section>
   )
 }

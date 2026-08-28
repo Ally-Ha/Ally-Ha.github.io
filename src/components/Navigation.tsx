@@ -9,13 +9,12 @@ const navItems = [
   { id: 'work', label: 'Work' },
   { id: 'education', label: 'Education' },
   { id: 'writing', label: 'Writing' },
-  { id: 'speaking', label: 'Speaking' },
+  { id: 'speaking', label: 'Projects' },
 ]
 
 const socialLinks = [
-  { label: 'Mail', href: 'mailto:bruce@banner.com' },
-  { label: 'Instagram', href: 'https://instagram.com' },
-  { label: 'Vimeo', href: 'https://vimeo.com' },
+  { label: 'Mail', href: 'mailto:alina@hantkes.de' },
+  { label: 'Instagram', href: 'https://instagram.com/ally_htk' },
 ]
 
 export function Navigation() {
@@ -101,7 +100,7 @@ export function Navigation() {
       </div>
 
       {/* Desktop Navigation Items - Fixed Bottom Right (hidden on mobile) */}
-      <nav 
+      <nav
         className={cn(
           'hidden md:block fixed bottom-0 right-0 z-50 p-6 md:p-10 transition-all duration-500',
           isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8 pointer-events-none'

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const skills = [
   'Statistical Analysis',
-  'Methodoloical Design',
+  'Methodological Design',
   'Machine Learning',
   'Data Science',
   'Science Communication',

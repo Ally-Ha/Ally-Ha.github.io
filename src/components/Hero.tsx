@@ -7,7 +7,7 @@ export function Hero() {
       <div className="absolute inset-0 w-full h-full">
         <img
           src="/hero-image.jpg"
-          alt="Bruce Banner"
+          alt="Alina Hantke - Psychologist and AI Researcher"
           className="w-full h-full object-cover object-center"
         />
         {/* Dark overlay for better text readability */}
@@ -26,7 +26,6 @@ export function Hero() {
             <h1 className="font-display leading-none tracking-tighter text-[15vw] sm:text-[12vw] md:text-hero">
               <span className="block text-white">Alina</span>
               <span className="block text-white">Hantke</span>
-              <span className="block text-white">Portfolio</span>
             </h1>
 
             <motion.p

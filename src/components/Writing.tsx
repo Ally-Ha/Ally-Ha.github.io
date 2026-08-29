@@ -4,24 +4,28 @@ const articles = [
   {
     title: 'Impact of an App-Based Resilience Training on Enhancing Stress Regulation and Mental Health',
     publication: 'Neuropsychobiology',
+    type: "Peer-Reviewed Publication",
     year: '2025',
     link: 'https://pubmed.ncbi.nlm.nih.gov/39938508/',
   },
   {
     title: 'Ultracyclistin Alina Hantke über das Three Peaks Bike Race',
     publication: 'The Female Explorer',
+    type: "Blog Post",
     year: '2024',
-    link: '#https://thefemaleexplorer.de/outdoor-frauen/ultracycling-three-peaks-bike-race-erfahrung-frau-alina-hantke/',
+    link: 'https://thefemaleexplorer.de/outdoor-frauen/ultracycling-three-peaks-bike-race-erfahrung-frau-alina-hantke/',
   },
   {
     title: 'Master Thesis of AI For Health: Constitutional AI using Acceptance and Commitment Principles',
     publication: 'In Preparation for Publication',
+    type: "Thesis",
     year: '2026',
     link: '#',
   },
   {
     title: 'Master Thesis of Psychology: Sentiment Analysis of Research Abstracts.',
     publication: 'In Preparation for Publication',
+    type: "Thesis",
     year: '2025',
     link: '#',
   },
@@ -40,7 +44,7 @@ export function Writing() {
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <motion.div {...fadeInUp} className="mb-16">
-          <span className="text-sm text-gray-500 tracking-widest uppercase">Essays & Articles</span>
+          <span className="text-sm text-gray-500 tracking-widest uppercase">Publications</span>
           <div className="w-6 h-px bg-gray-600 mt-2" />
         </motion.div>
 
@@ -48,7 +52,7 @@ export function Writing() {
           {...fadeInUp}
           className="font-display text-[10vw] lg:text-section leading-none tracking-tight mb-16 lg:mb-24"
         >
-          WRITING
+          PUBLICATIONS
         </motion.h2>
 
         {/* Articles List */}
@@ -69,7 +73,7 @@ export function Writing() {
                     {article.title}
                   </h3>
                   <p className="text-sm text-gray-500 mt-1 md:mt-2">
-                    Essay — {article.publication}
+                    Publication — {article.publication}
                   </p>
                 </div>
                 <span className="text-sm text-gray-600">{article.year}</span>

@@ -3,21 +3,24 @@ import { motion } from 'framer-motion'
 const talks = [
   {
     title: 'The ps[ai]chology project',
-    project: 'A science communication blog briding the gap between psychology and artificial intelligence',
-    year: 'starting soon',
-    link: 'the-psaichology-project.com',
+    type: 'Project',
+    project: 'A science communication blog bridging the gap between psychology and artificial intelligence',
+    year: 'Coming soon',
+    link: 'https://the-psaichology-project.com',
   },
   {
-    title: 'Athletes Development Journal',
-    project: 'Co-Building a scientific sportpsychological journal for athletes',
+    title: 'Athlete Development Journal',
+    type: 'Project',
+    project: 'Co-building a scientific sports psychology journal for athletes',
     year: '2026',
-    link: 'www.athletesdevelopment.cc',
+    link: 'https://www.athletesdevelopment.cc',
   },
   {
     title: 'Gravel Grinders Graz',
-    event: 'Co-Founded the first gravel cycling community in Graz, Austria (100+ members)',
+    type: 'Community',
+    project: 'Co-founded the first gravel cycling community in Graz, Austria (140+ members, 1000 Members on Strava)',
     year: '2023',
-    link: 'www.gravelgrindersgraz.at',
+    link: 'https://www.gravelgrindersgraz.at',
   },
 ]
 
@@ -28,13 +31,13 @@ const fadeInUp = {
   transition: { duration: 0.8, ease: 'easeOut' }
 }
 
-export function Speaking() {
+export function Projects() {
   return (
     <section id="speaking" className="section-padding bg-[#0d0d0d]">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <motion.div {...fadeInUp} className="mb-16">
-          <span className="text-sm text-gray-500 tracking-widest uppercase">Talks & Lectures</span>
+          <span className="text-sm text-gray-500 tracking-widest uppercase">Projects</span>
           <div className="w-6 h-px bg-gray-600 mt-2" />
         </motion.div>
 
@@ -51,6 +54,8 @@ export function Speaking() {
             <motion.a
               key={talk.title}
               href={talk.link}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -63,7 +68,7 @@ export function Speaking() {
                     {talk.title}
                   </h3>
                   <p className="text-sm text-gray-500 mt-1 md:mt-2">
-                    Talk — {talk.event}
+                    {talk.type} — {talk.project}
                   </p>
                 </div>
                 <span className="text-sm text-gray-600">{talk.year}</span>

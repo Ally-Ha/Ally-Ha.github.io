@@ -1,5 +1,45 @@
 import { motion } from 'framer-motion'
 
+const educationData = [
+  {
+    degree: 'M.Sc. AI for Health',
+    university: 'Stockholm University',
+    location: 'Stockholm / Sverige',
+    period: '2024 — 2026',
+    image: '/Stockholm-MSC.jpg',
+    coursework: ['Artificial Intelligence', 'Machine Learning', 'NLP', 'Reinforcement Learning', 'Data Science in Healthcare'],
+    thesis: 'Constitutional AI using Acceptance and Commitment Principles',
+    supervisors: [
+      { name: 'Zack Hui, Cambridge University', url: 'https://www.zackhui.com/' },
+      { name: 'Prof. Isak Samsten, Stockholm University', url: 'https://scholar.google.com/citations?user=YZOpzS8AAAAJ&hl=en' }
+    ]
+  },
+  {
+    degree: 'M.Sc. Psychology',
+    university: 'University of Graz',
+    location: 'Graz / Austria',
+    period: '2023 — 2025',
+    image: '/Graz-MSC.png',
+    coursework: ['Cognitive Psychology', 'Clinical Psychology', 'Methods of Psychological Research', 'Advanced Statistics', 'EEG and fMRI Analysis'],
+    thesis: 'Sentiment Analysis in Research Abstracts: ChatGPT generated vs. Human-written',
+    supervisors: [
+      { name: 'Prof. Dr. Guilherme Wood', url: 'https://scholar.google.com/citations?user=L7WFhmgAAAAJ&hl=en' }
+    ]
+  },
+  {
+    degree: 'B.Sc. Psychology',
+    university: 'University of Graz',
+    location: 'Graz / Austria',
+    period: '2020 — 2023',
+    image: '/Graz-BSC.jpeg',
+    coursework: ['Social Psychology', 'Biological Psychology', 'General Psychology', 'Statistics', 'Research Methods'],
+    thesis: 'Iconic Help for Diabetes! The Influence of Icons and Prior Knowledge on Cognitive Load in Visualizing Health Information Using the Example of Type 2 Diabetes.',
+    supervisors: [
+      { name: 'Prof. Dr. Sabine Berger', url: 'https://scholar.google.com/citations?user=FnOjwgEAAAAJ&hl=en' }
+    ]
+  }
+]
+
 const fadeInUp = {
   initial: { opacity: 0, y: 40 },
   whileInView: { opacity: 1, y: 0 },
@@ -26,105 +66,81 @@ export function Education() {
 
         {/* Education Items */}
         <div className="space-y-16 lg:space-y-24">
-          {/* SU */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24">
-            <motion.div {...fadeInUp}>
-              <img
-                src="https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="MIT Campus"
-                className="w-full h-auto grayscale"
-              />
-              <p className="mt-4 text-xs text-gray-500 tracking-widest uppercase">
-                SU - Stockholm / Sverige
-              </p>
-            </motion.div>
-
-            <motion.div
-              {...fadeInUp}
-              transition={{ ...fadeInUp.transition, delay: 0.2 }}
-              className="flex items-center"
-            >
-              <div>
-                <h3 className="text-xl lg:text-2xl font-light text-white mb-4">
-                  M.Sc. AI for Health
-                </h3>
-                <p className="text-gray-400 leading-relaxed mb-4 text-sm lg:text-base">
-                  Coursework of artificial intelligence (AI) and its applications in healthcare,
-                  including machine learning, nlp, reinforcement learning and data science.
-                  Master Thesis on: "Constitutional AI using Acceptance and Commitment Principles",
-                  supervised by Zack Hui (Cambridge University) and Prof. Isak Samsten (Stockholm University).
+          {educationData.map((edu, index) => (
+            <div key={edu.degree} className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24">
+              <motion.div 
+                {...fadeInUp}
+                className={index === 1 ? 'lg:order-2' : ''}
+              >
+                <img
+                  src={edu.image}
+                  alt={`${edu.university} - ${edu.degree}`}
+                  className="w-full h-auto grayscale"
+                />
+                <p className="mt-4 text-xs text-gray-500 tracking-widest uppercase">
+                  {edu.university} - {edu.location}
                 </p>
-                <p className="text-sm text-gray-500">2008 — 2012</p>
-              </div>
-            </motion.div>
-          </div>
+              </motion.div>
 
-          {/* Psychology */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24">
-            <motion.div
-              {...fadeInUp}
-              className="flex items-center lg:order-2"
-            >
-              <div>
-                <h3 className="text-xl lg:text-2xl font-light text-white mb-4">
-                  M.Sc. Psychology
-                </h3>
-                <p className="text-gray-400 leading-relaxed mb-4 text-sm lg:text-base">
-                  Coursework in Methods of Psychological Research, Advanced Statistics,
-                  EEG and fMRI Analysis, Cognitive Psychology, and Clinical Psychology.
-                  Master Thesis on: "Sentiment Analysis in Research Abstracts: ChatGPT generated vs. Human-written"
-                  Supervised by Prof. Dr. Guilherme Wood, University of Graz, Austria.
-                </p>
-                <p className="text-sm text-gray-500">2013 — 2015</p>
-              </div>
-            </motion.div>
+              <motion.div
+                {...fadeInUp}
+                transition={{ ...fadeInUp.transition, delay: 0.2 }}
+                className={`flex items-center ${index === 1 ? 'lg:order-1' : ''}`}
+              >
+                <div className="w-full">
+                  <h3 className="text-xl lg:text-2xl font-light text-white mb-4">
+                    {edu.degree}
+                  </h3>
+                  <p className="text-sm text-gray-500 tracking-widest uppercase mb-6">
+                    {edu.period}
+                  </p>
 
-            <motion.div
-              {...fadeInUp}
-              transition={{ ...fadeInUp.transition, delay: 0.2 }}
-              className="lg:order-1"
-            >
-              <img
-                src="https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Parsons School of Design"
-                className="w-full h-auto grayscale"
-              />
-              <p className="mt-4 text-xs text-gray-500 tracking-widest uppercase">
-                University of Graz - Graz / AUSTRIA
-              </p>
-            </motion.div>
-          </div>
+                  {/* Coursework */}
+                  <div className="mb-6">
+                    <h4 className="text-sm font-medium text-gray-300 mb-3 tracking-wide">COURSEWORK</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {edu.coursework.map((course) => (
+                        <span
+                          key={course}
+                          className="px-3 py-1 text-xs text-gray-500 border border-gray-800 rounded-full"
+                        >
+                          {course}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
 
-          {/* ICP */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24">
-            <motion.div {...fadeInUp}>
-              <img
-                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="International Center of Photography"
-                className="w-full h-auto grayscale"
-              />
-              <p className="mt-4 text-xs text-gray-500 tracking-widest uppercase">
-                University of Graz - Graz / AUSTRIA
-              </p>
-            </motion.div>
+                  {/* Thesis */}
+                  <div className="mb-6">
+                    <h4 className="text-sm font-medium text-gray-300 mb-2 tracking-wide">THESIS</h4>
+                    <p className="text-gray-400 text-sm lg:text-base leading-relaxed">
+                      {edu.thesis}
+                    </p>
+                  </div>
 
-            <motion.div
-              {...fadeInUp}
-              transition={{ ...fadeInUp.transition, delay: 0.2 }}
-              className="flex items-center"
-            >
-              <div>
-                <h3 className="text-xl lg:text-2xl font-light text-white mb-4">
-                  B.Sc. Psychology
-                </h3>
-                <p className="text-gray-400 leading-relaxed mb-4 text-sm lg:text-base">
-                  Coursework in Social, Biological, General Psychology, Statistics, and Research Methods.
-                  Bachelor Thesis on: "Cognitive Load"
-                </p>
-                <p className="text-sm text-gray-500">2016</p>
-              </div>
-            </motion.div>
-          </div>
+                  {/* Supervisors */}
+                  {edu.supervisors.length > 0 && (
+                    <div>
+                      <h4 className="text-sm font-medium text-gray-300 mb-3 tracking-wide">SUPERVISORS</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {edu.supervisors.map((supervisor) => (
+                          <a
+                            key={supervisor.name}
+                            href={supervisor.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-3 py-1 text-xs text-gray-500 border border-gray-800 rounded-full hover:text-white hover:border-gray-600 transition-colors"
+                          >
+                            {supervisor.name}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </motion.div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

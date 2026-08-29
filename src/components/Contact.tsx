@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 
 const contacts = [
-  { label: 'GERMANY', type: 'location', link: '#' },
-  { label: 'NEW ZEALAND', type: 'location', link: '#' },
+  { label: 'E-Mail', type: 'location', link: 'mailto:alina@hantkes.de' },
+  { label: 'LinkedIn', type: 'location', link: 'https://www.linkedin.com/in/alina-hantke/' },
 ]
 
 const fadeInUp = {
@@ -44,9 +44,10 @@ export function Contact() {
           className="mb-12 lg:mb-16 max-w-2xl"
         >
           <h3 className="text-xl md:text-2xl lg:text-3xl text-white font-light leading-tight mb-4">
-            I'M NOTORIOUSLY<br />
-            SLOW AT GETTING<br />
-            BACK TO EMAILS
+            I&apos;M EXCITED<br />
+            TO GET TO KNOW<br />
+            YOU AND YOUR PROJECTS!
+          </h3>
         </motion.div>
 
         {/* Contact Links */}
@@ -72,32 +73,6 @@ export function Contact() {
           <div className="border-t border-gray-800" />
         </div>
 
-        {/* Direct Contact */}
-        <motion.div
-          {...fadeInUp}
-          className="mt-16 lg:mt-24 pt-12 lg:pt-16 border-t border-gray-800"
-        >
-          <p className="text-sm text-gray-500 mb-6 lg:mb-8 tracking-widest uppercase">
-            Or reach me directly
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 md:gap-16">
-            <a
-              href="mailto:alina@hantkes.de"
-              className="text-lg lg:text-xl text-gray-300 hover:text-white transition-colors underline underline-offset-4"
-            >
-              alina@hantkes.de
-            </a>
-            <a
-              href="https://instagram.com/ally_htk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg lg:text-xl text-gray-300 hover:text-white transition-colors underline underline-offset-4"
-            >
-              Instagram
-            </a>
-          </div>
-        </motion.div>
-
         {/* Footer */}
         <motion.footer
           {...fadeInUp}
@@ -107,7 +82,7 @@ export function Contact() {
             © {new Date().getFullYear()} Alina Hantke. All rights reserved.
           </p>
           <p className="text-xs text-gray-600">
-            München / Stockholm /Auckland
+            Munich / Graz / Stockholm / Auckland
           </p>
         </motion.footer>
       </div>

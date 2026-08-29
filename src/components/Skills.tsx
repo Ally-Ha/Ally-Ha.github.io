@@ -1,14 +1,48 @@
 import { motion } from 'framer-motion'
+import Autoplay from 'embla-carousel-autoplay'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel'
+
+const humanTraits = [
+  'Curiosity',
+  'Empathy',
+  'Critical Thinking',
+  'Communication',
+  'Adaptability',
+  'Collaboration',
+]
 
 const skills = [
-  'Statistical Analysis',
-  'Methodological Design',
-  'Machine Learning',
-  'Data Science',
-  'Science Communication',
-  'Experimental Psychology',
-  'Sport Psychology',
-  'Ethical Considerations in AI for Mental Health',
+  { name: 'Listening', examples: 'Active listening, empathetic understanding' },
+  { name: 'Statistical Analysis', examples: 'Multivariate analysis, Factor Analysis' },
+  { name: 'Methodological Design', examples: 'RCT, experimental protocols' },
+  { name: 'Machine Learning', examples: 'NLP, Neural networks, Reinforcement Learning' },
+  { name: 'Data Science', examples: 'Data visualization, feature engineering, model evaluation' },
+  { name: 'Ethical Considerations in AI for Mental Health', examples: 'RLAIF, Constitutional AI, Ethical AI' },
+]
+
+const skillBuckets = [
+  {
+    label: 'Human Languages I speak',
+    items: ['German (native)', 'English (fluent)', 'Swedish (intermediate)'],
+  },
+  {
+    label: 'Computer Languages I use',
+    items: ['Python', 'R',],
+  },
+  {
+    label: 'Tools of my everyday work',
+    items: ['GitHub', 'Jupyter', 'VS Code', 'SPSS', 'Figma', 'Azure'],
+  },
+  {
+    label: 'Fields of interest',
+    items: ['Sport Psychology','Psychology & AI', 'Science Communication'],
+  },
 ]
 
 const fadeInUp = {
@@ -35,22 +69,81 @@ export function Skills() {
           SKILLS
         </motion.h2>
 
-        {/* Skills List */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-4 lg:gap-y-6">
-          {skills.map((skill, index) => (
-            <motion.div
-              key={skill}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="border-b border-gray-800 pb-4"
-            >
-              <span className="text-lg md:text-xl lg:text-2xl text-gray-300 font-light">
-                {skill}
-              </span>
-            </motion.div>
-          ))}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+          <div>
+            <h3 className="text-sm text-gray-500 tracking-widest uppercase mb-6">Human Traits</h3>
+            <div className="border-t border-gray-800">
+              {humanTraits.map((trait, index) => (
+                <motion.div
+                  key={trait}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="border-b border-gray-800 py-4"
+                >
+                  <span className="text-lg md:text-xl lg:text-2xl text-gray-300 font-light">
+                    {trait}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-sm text-gray-500 tracking-widest uppercase mb-6">Skills</h3>
+            <div className="border-t border-gray-800">
+              {skills.map((skill, index) => (
+                <motion.div
+                  key={skill.name}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="border-b border-gray-800 py-4"
+                >
+                  <span className="text-lg md:text-xl lg:text-2xl text-gray-300 font-light">
+                    {skill.name}
+                  </span>
+                  <p className="text-xs text-gray-600 mt-2 min-h-5">
+                    {skill.examples}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-20 lg:mt-28">
+          <Carousel 
+            opts={{ align: 'start', loop: true }}
+            plugins={[
+              Autoplay({
+                delay: 4000,
+              }),
+            ]}
+          >
+            <CarouselContent>
+              {skillBuckets.map((bucket) => (
+                <CarouselItem key={bucket.label} className="md:basis-1/3">
+                  <div className="border-t border-gray-800 pt-5 pb-8">
+                    <h3 className="text-lg md:text-xl text-white font-light mb-5">
+                      {bucket.label}
+                    </h3>
+                    <div className="space-y-2">
+                      {bucket.items.map((item) => (
+                        <p key={item} className="text-sm text-gray-500">
+                          {item}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="border-gray-700 bg-transparent text-gray-300 hover:bg-gray-800" />
+            <CarouselNext className="border-gray-700 bg-transparent text-gray-300 hover:bg-gray-800" />
+          </Carousel>
         </div>
       </div>
     </section>

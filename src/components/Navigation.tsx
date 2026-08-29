@@ -8,13 +8,17 @@ const navItems = [
   { id: 'skills', label: 'Skills' },
   { id: 'work', label: 'Work' },
   { id: 'education', label: 'Education' },
-  { id: 'writing', label: 'Writing' },
+  { id: 'writing', label: 'Publications' },
   { id: 'speaking', label: 'Projects' },
+  { id: 'beyond-work', label: 'Beyond Work' },
 ]
 
 const socialLinks = [
   { label: 'Mail', href: 'mailto:alina@hantkes.de' },
-  { label: 'Instagram', href: 'https://instagram.com/ally_htk' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/alina-hantke/' },
+  { label: 'GitHub', href: 'https://github.com/allyhtk' },
+  { label: 'ORCID', href: 'https://orcid.org/0009-0000-7269-760X' },
+
 ]
 
 export function Navigation() {

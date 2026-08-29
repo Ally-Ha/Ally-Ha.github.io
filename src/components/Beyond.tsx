@@ -1,48 +1,58 @@
 import { motion } from 'framer-motion';
 
-const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: 'easeOut' },
-  },
-};
 
-export default function Beyond() {
+
+
+import { motion } from 'framer-motion'
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 40 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, margin: '-100px' },
+  transition: { duration: 0.8, ease: 'easeOut' }
+}
+
+export function Beyond() {
   return (
-    <motion.section
-      id="beyond-work"
-      className="relative overflow-hidden py-20 md:py-28"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-      variants={fadeInUp}
-    >
-      <div className="mx-auto max-w-5xl px-6 lg:px-8">
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-[0_0_30px_rgba(148,163,184,0.12)] backdrop-blur-sm md:p-12">
+    <section id="beyond-work" className="section-padding">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Label */}
+        <motion.div {...fadeInUp} className="mb-16">
+          <span className="text-sm text-gray-500 tracking-widest uppercase">Beyond Work</span>
+          <div className="w-6 h-px bg-gray-600 mt-2" />
+        </motion.div>
+
+        {/* First Block */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="flex flex-col gap-5"
+            {...fadeInUp}
+            className="order-2 lg:order-1"
           >
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-sky-300/80">
-              Beyond work
+            <img
+              src='beyond.jpeg'
+              alt="for me productivity correlates with coffe consumption."
+              className="w-full h-auto grayscale"
+            />
+            <p className="mt-4 text-xs text-gray-500 tracking-widest uppercase">
+              Happy Place: Outside, on my bicycle. This was me after Vätternrundan, a 300km cycling event in Sweden.
             </p>
-            <h2 className="text-2xl font-semibold tracking-tight text-white md:text-4xl">
-              Curiosity, creativity, and a life outside the screen.
-            </h2>
-            <p className="max-w-3xl text-base leading-7 text-slate-300 md:text-lg">
+          </motion.div>
+
+          <motion.div
+            {...fadeInUp}
+            transition={{ ...fadeInUp.transition, delay: 0.2 }}
+            className="order-1 lg:order-2 flex items-center"
+          >
+            <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
               I enjoy most of my free time outdoors, exploring nature by cycling, hiking or running. 
               I already completed a few long-distance cycling tours, including 2 month from Munich to the North Cape in Norway, 
               and a 2 month trip from Belgium, via the GB-Divide to the Shetland Islands. 
               When the weather is not ideal, I love to knit or play some good board games with friends.
+             
             </p>
           </motion.div>
         </div>
       </div>
-    </motion.section>
-  );
+    </section>
+  )
 }

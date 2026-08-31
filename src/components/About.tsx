@@ -26,7 +26,7 @@ export function About() {
             <img
               src='me.JPG'
               alt="for me productivity correlates with coffe consumption."
-              className="w-full h-auto grayscale"
+              className="w-full h-auto img-editorial"
             />
             <p className="mt-4 text-xs text-gray-500 tracking-widest uppercase">
               On a single person study, conducted by myself on my self (no bias detected), 
@@ -40,29 +40,29 @@ export function About() {
             className="order-1 lg:order-2 flex items-center"
           >
             <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
-              Hi there! 
-              I am Alina, a psychologist trying to figure out how to combine psychology, sport and AI.
-              
-              I studied Psychology (B.Sc. and M.Sc.) at the University of Graz in Austria.
-              
-              After the AI hype began, I became increasingly interested in AI 
-              and decided to learn more about it.
-              So that's why I started (and more importantly finished) a second 2-year master&apos;s degree 
-              in Artificial Intelligence for Health at the Stockholm University in Sweden.
+              Hi there! I&apos;m Alina, a psychologist working to bridge psychology, sport, and AI.
+            </p>
 
-              Both my Master Thesis were already focused on the intersection of psychology and AI, 
-              and I had the great opportunity to work with some amazing researchers in the field of AI and psychology.
-              For my M.Sc. in Psychology, my supervisor was Prof. Dr. Guilherme Wood,
-              and for my M.Sc. in AI for Health, my supervisors were Zack Hui (Cambridge University) and Prof. Isak Samsten (Stockholm University).
+            <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
+              I completed my B.Sc. and M.Sc. in Psychology at the University of Graz, Austria, under
+              the supervision of Prof. Dr. Guilherme Wood. Motivated by the growing impact of AI, I
+              went on to complete a second, two-year M.Sc. in Artificial Intelligence for Health at
+              Stockholm University, Sweden, supervised by Zack Hui (Cambridge University) and Prof.
+              Isak Samsten (Stockholm University). Both theses focused on the intersection of
+              psychology and AI, giving me the opportunity to collaborate with leading researchers in
+              the field.
+            </p>
 
-              Now, I am on a mission to build a bridge between 
-              psychology, sport, and AI 
-              while communicating scientific knowledge to the public.
-              I am also interested in the ethical implications of AI 
-              and how it can be used to improve mental health and well-being.
-              Right now, I am self-employed working on my two projects (Athlete's Development Journal)
-              and the Ps[ai]chology Project, but I am planning to start a PhD in the field of AI for Mental Health in summer 2027.
+            <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
+              Today, I&apos;m on a mission to connect psychology, sport, and AI while making
+              scientific knowledge accessible to the public. I&apos;m particularly interested in the
+              ethical implications of AI and its potential to support mental health and well-being.
+            </p>
 
+            <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
+              I&apos;m currently self-employed, working on two ventures: the{" "}
+              <em>Athlete&apos;s Development Journal</em> and the <em>Ps[ai]chology Project</em>. I
+              plan to begin a PhD in AI, Psychology and Mental Health in summer 2027.
             </p>
           </motion.div>
         </div>

@@ -31,7 +31,7 @@ export function Beyond() {
             <img
               src='beyond.jpeg'
               alt="for me productivity correlates with coffe consumption."
-              className="w-full h-auto grayscale"
+              className="w-full h-auto img-editorial"
             />
             <p className="mt-4 text-xs text-gray-500 tracking-widest uppercase">
               Happy Place: Outside, on my bicycle. This was me after Vätternrundan, a 300km cycling event in Sweden.
@@ -46,7 +46,7 @@ export function Beyond() {
             <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
               I enjoy most of my free time outdoors, exploring nature by cycling, hiking or running. 
               I already completed a few long-distance cycling tours, including 2 month from Munich to the North Cape in Norway, 
-              and a 2 month trip from Belgium, via the GB-Divide to the Shetland Islands. 
+              and a 2 month trip from Belgium, via the GB-Divide to the Shetland Islands. On the more competitive side, I have finished the Three Peakes Bike Race in 2024. It is a ultra-cycling roadcycling race from Vienna to Nizza (2.500 km, 44.000 moe, in 10 days).
               When the weather is not ideal, I love to knit or play some good board games with friends.
              
             </p>

@@ -16,7 +16,7 @@ const navItems = [
 const socialLinks = [
   { label: 'Mail', href: 'mailto:alina@hantkes.de' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/alina-hantke/' },
-  { label: 'GitHub', href: 'https://github.com/allyhtk' },
+  { label: 'GitHub', href: 'https://github.com/Ally-Ha' },
   { label: 'ORCID', href: 'https://orcid.org/0009-0000-7269-760X' },
 
 ]

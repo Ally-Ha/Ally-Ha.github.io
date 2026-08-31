@@ -8,7 +8,7 @@ const educationData = [
     period: '2024 — 2026',
     image: '/Stockholm-MSC.jpg',
     coursework: ['Artificial Intelligence', 'Machine Learning', 'NLP', 'Reinforcement Learning', 'Data Science in Healthcare'],
-    thesis: 'Constitutional AI using Acceptance and Commitment Principles',
+    thesis: 'Therapy specific Constitutional AI using Acceptance and Commitment Therapy (ACT) Principles',
     supervisors: [
       { name: 'Zack Hui, Cambridge University', url: 'https://www.zackhui.com/' },
       { name: 'Prof. Isak Samsten, Stockholm University', url: 'https://scholar.google.com/citations?user=YZOpzS8AAAAJ&hl=en' }
@@ -21,7 +21,7 @@ const educationData = [
     period: '2023 — 2025',
     image: '/Graz-MSC.png',
     coursework: ['Cognitive Psychology', 'Clinical Psychology', 'Methods of Psychological Research', 'Advanced Statistics', 'EEG and fMRI Analysis'],
-    thesis: 'Sentiment Analysis in Research Abstracts: ChatGPT generated vs. Human-written',
+    thesis: 'Sentiment Analysis in Research Abstracts: ChatGPT Generated vs. Human-Written',
     supervisors: [
       { name: 'Prof. Dr. Guilherme Wood', url: 'https://scholar.google.com/citations?user=L7WFhmgAAAAJ&hl=en' }
     ]
@@ -75,7 +75,7 @@ export function Education() {
                 <img
                   src={edu.image}
                   alt={`${edu.university} - ${edu.degree}`}
-                  className="w-full h-auto grayscale"
+                  className="w-full h-auto img-editorial"
                 />
                 <p className="mt-4 text-xs text-gray-500 tracking-widest uppercase">
                   {edu.university} - {edu.location}

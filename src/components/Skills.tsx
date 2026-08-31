@@ -18,12 +18,12 @@ const humanTraits = [
 ]
 
 const skills = [
-  { name: 'Listening', examples: 'Active listening, empathetic understanding' },
-  { name: 'Statistical Analysis', examples: 'Multivariate analysis, Factor Analysis' },
-  { name: 'Methodological Design', examples: 'RCT, experimental protocols' },
-  { name: 'Machine Learning', examples: 'NLP, Neural networks, Reinforcement Learning' },
-  { name: 'Data Science', examples: 'Data visualization, feature engineering, model evaluation' },
-  { name: 'Ethical Considerations in AI for Mental Health', examples: 'RLAIF, Constitutional AI, Ethical AI' },
+  { name: 'Listening', examples: 'f.ex.: Active listening, empathetic understanding, ...' },
+  { name: 'Statistical Analysis', examples: 'f.ex.: Multivariate analysis, Factor Analysis, ...' },
+  { name: 'Methodological Design', examples: 'f.ex.: RCT, experimental protocols, ...' },
+  { name: 'Machine Learning', examples: 'f.ex.: NLP, Neural networks, Reinforcement Learning, ...' },
+  { name: 'Data Science', examples: 'f.ex.: Data visualization, feature engineering, model evaluation, ...' },
+  { name: 'Ethical Considerations in AI for Mental Health', examples: 'f.ex.: RLAIF, Constitutional AI, Ethical AI, ...' },
 ]
 
 const skillBuckets = [
@@ -37,7 +37,7 @@ const skillBuckets = [
   },
   {
     label: 'Tools of my everyday work',
-    items: ['GitHub', 'Jupyter', 'VS Code', 'SPSS', 'Figma', 'Azure'],
+    items: ['R Studio', 'GitHub', 'Jupyter Notebook', 'VS Code', 'SPSS', 'Figma', 'Azure'],
   },
   {
     label: 'Fields of interest',

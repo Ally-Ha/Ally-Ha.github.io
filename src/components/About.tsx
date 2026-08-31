@@ -41,9 +41,6 @@ export function About() {
           >
             <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
               Hi there! I&apos;m Alina, a psychologist working to bridge psychology, sport, and AI.
-            </p>
-
-            <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
               I completed my B.Sc. and M.Sc. in Psychology at the University of Graz, Austria, under
               the supervision of Prof. Dr. Guilherme Wood. Motivated by the growing impact of AI, I
               went on to complete a second, two-year M.Sc. in Artificial Intelligence for Health at
@@ -51,15 +48,9 @@ export function About() {
               Isak Samsten (Stockholm University). Both theses focused on the intersection of
               psychology and AI, giving me the opportunity to collaborate with leading researchers in
               the field.
-            </p>
-
-            <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
               Today, I&apos;m on a mission to connect psychology, sport, and AI while making
               scientific knowledge accessible to the public. I&apos;m particularly interested in the
               ethical implications of AI and its potential to support mental health and well-being.
-            </p>
-
-            <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
               I&apos;m currently self-employed, working on two ventures: the{" "}
               <em>Athlete&apos;s Development Journal</em> and the <em>Ps[ai]chology Project</em>. I
               plan to begin a PhD in AI, Psychology and Mental Health in summer 2027.
